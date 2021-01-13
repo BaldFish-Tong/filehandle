@@ -9,13 +9,14 @@ def default():
 
 def main():
     choice = print_func()
-    if choice==1:
+    if choice == 1:
         partname_del()
-    elif choice==2:
+    elif choice == 2:
         filewithkey_del()
     else:
+        default()
+        main()
         pass
-
 
 
 if __name__ == "__main__":
